@@ -1,0 +1,53 @@
+@import "default_style.css";
+
+
+$ciano: #0e909f;
+$amarelo: #f3ac25;
+$pattern: url(img/pattern_azul.jpg);
+$marca: url(../pix/marca-ensino.svg);
+
+header{
+	background-image: $pattern;
+	background-repeat: repeat;
+	overflow: visible;
+}
+
+
+.header3.main-menu{
+	background-color: transparent;
+	position: static;
+}
+
+.only{
+	background-color: transparent;
+	position: static;
+	min-height: 0;
+	// height: 20px;
+
+}
+
+.langmenu, ul.nav .langmenu {
+	width: auto;
+}
+
+.header3-login{
+	position: static;
+}
+
+.inner-logo{
+	background-image: $marca;
+	background-repeat: no-repeat;
+	background-size: contain;
+	// min-height: 0px;
+	// height: 100px;
+	// width: 200px;
+}
+
+.navbar .nav{
+	margin: 6px;
+}
+
+.logo-text{
+	padding-left: 0;
+}
+
