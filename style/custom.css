@@ -51,7 +51,7 @@ body {
 
 /*.only, */
 .submissionlinks a, 
-.jsenabled .usermenu .moodle-actionmenu.show, 
+/*.jsenabled .usermenu .moodle-actionmenu.show, */
 .adminsearchform input[type="submit"], 
 input[type="submit"], 
 input#id_submitbutton, 
@@ -59,7 +59,7 @@ input#id_submitbutton,
 .adminsearchform input[type="submit"], 
 .btn-2, 
 .login-information,
-.usermenu .menubar a, 
+/*.usermenu .menubar a, */
 .stay-connected i, 
 .categories-item-cont, 
 .av-course-item-cont, 
@@ -71,7 +71,8 @@ input#id_submitbutton,
     background: #0e909f !important;
 }
 
-.block .header h2:after, .btn-1 {
+/*.block .header h2:after, */
+.btn-1 {
     border: solid 1px #0e909f !important;
 }
 

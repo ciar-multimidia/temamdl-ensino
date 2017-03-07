@@ -1,15 +1,57 @@
 @import "default_style.css";
 
 
-$ciano: #0e909f;
-$amarelo: #f3ac25;
+$cor1: #0e909f;
+$cor2: #f3ac25;
 $pattern: url(img/pattern_azul.jpg);
 $marca: url(../pix/marca-ensino.svg);
+$grafismo: url(img/grafismo-ensino.svg);
 
 header{
-	background-image: $pattern;
-	background-repeat: repeat;
+	background-image: $grafismo, $pattern;
+	background-position: center right, center center;
+	background-repeat: no-repeat, repeat;
+	background-size: 60%, auto;
 	overflow: visible;
+	z-index: 10;
+	&#header, &.navbar{
+		border-bottom: 8px solid $cor2;
+
+	}
+}
+
+.nome-universidade{
+	display: block;
+	width: 100%;
+	background-color: transparentize($cor1, 0);
+	p{
+		color:  white;
+		text-align: center;
+		font-size: 12px;
+		line-height: 1;
+		padding: 4px 0;
+		letter-spacing: 0.4px;
+		vertical-align: middle;
+		display: block;
+		img{
+			margin-left: 1em;
+			vertical-align: middle;
+			display: inline;
+			line-height: 1;
+			height: 1.3em;
+		}
+	}
+
+}
+
+header.navbar.navbar-fixed-top{
+	width: 100%;
+	position: static;
+	float: none;
+}
+
+div#page-navbar{
+	margin-top: 0;
 }
 
 
@@ -38,16 +80,68 @@ header{
 	background-image: $marca;
 	background-repeat: no-repeat;
 	background-size: contain;
+	height: 100px;
+	width: 220px;
+	line-height: 0;
 	// min-height: 0px;
 	// height: 100px;
 	// width: 200px;
 }
 
+.navbar{
+	float: none;
+}
+
 .navbar .nav{
-	margin: 6px;
+	margin:6px 0;
+}
+
+@media screen and (max-width: 979px) {
+	.navbar .btn-navbar{
+		margin: 5px 0;
+	}
 }
 
 .logo-text{
 	padding-left: 0;
+}
+
+
+
+.usermenu .menubar a{
+	background: transparent;
+}
+
+.header3.main-menu .usermenu{
+	margin-top: 6px;
+}
+
+.header3.main-menu .usermenu .menubar a{
+	background: $cor1;
+	padding: 4px 8px;
+	
+
+}
+
+.usermenu .moodle-actionmenu .toggle-display .userbutton .usertext{
+	color: white;
+}
+
+
+
+.jsenabled .usermenu .moodle-actionmenu.show {
+	background: $cor1;
+}
+
+.navbar-fixed-top .navbar-inner{
+	background-color: transparent;
+	select.langmenu{
+		color: black;
+		background-color: hsla(0, 0%, 100%, 0.7);
+	}
+}
+
+.block .header h2:after{
+	border: 1px solid $cor2;
 }
 

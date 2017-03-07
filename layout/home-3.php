@@ -58,6 +58,11 @@ echo $OUTPUT->doctype()
 		<?php echo $OUTPUT->standard_top_of_body_html() ?>
 		<header id="header">
 				<div class="main-menu header3">
+
+					<!-- barra da universidade -->
+					<div class="nome-universidade">
+						<p>Universidade Federal de Goiás <img src="<?php echo $OUTPUT->pix_url('marca-ufg', 'theme_roshnilite'); ?>" alt=""></p>
+					</div>
 					<div class="container">
 						<a href="<?php echo $CFG->wwwroot;?>" class="inner-logo logo-text"></a>
                         <?php echo $OUTPUT->user_menu(); ?>
@@ -66,7 +71,10 @@ echo $OUTPUT->doctype()
                     	</div>
 					</div><!-- END of .container -->
 				</div><!-- END of main-menu -->
-				<div class="only">
+
+				<!-- Menu de línguas removido -->
+
+				<!-- <div class="only">
 					<div class="container">
 						<div class="navbar">
 							<div class="navbar-inner">
@@ -77,13 +85,17 @@ echo $OUTPUT->doctype()
 										<span class="icon-bar"></span>
 									</button>
 									<div class="nav-collapse collapse">
-										<?php echo $OUTPUT->custom_menu();?>
-									</div><!--/.nav-collapse -->
+										<?php /* echo $OUTPUT->custom_menu(); */ ?>
+									</div>
 								</div>
-							</div><!-- END of .navbar-inner -->
-						</div><!-- END of .navbar -->
+							</div>
+						</div>
 					</div>
-				</div>
+				</div> -->
+
+
+
+
 				<?php if (!isloggedin()) { ?>
 					<div class="header3-login">
 						<div class="container">
