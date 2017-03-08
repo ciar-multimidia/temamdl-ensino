@@ -114,27 +114,16 @@ echo $OUTPUT->doctype()
             <?php	
             	require($CFG->dirroot.'/theme/roshnilite/layout/home/firstslider.php');
                 require($CFG->dirroot.'/theme/roshnilite/layout/home/aboutsite.php');
-                require($CFG->dirroot.'/theme/roshnilite/layout/home/availablecourse.php');
+                // require($CFG->dirroot.'/theme/roshnilite/layout/home/availablecourse.php');
             ?>
-            	<?php if ($enablemoodlemaincontent == 1) { ?>
-                <div class="container">
-                	<div class="moodlecorecontent">
-                		<?php echo $OUTPUT->main_content(); 
-                		if ($PAGE->user_is_editing()) { ?>
-                			<a class = "turnedit btn-1" href="<?php echo $CFG->wwwroot.'/course/view.php?id=1&sesskey='.sesskey().'&edit=off';?>"><?php echo get_string('turneditingoff');?></a>
-                		<?php } else { ?>
-                			<a class = "turnedit btn-1" href="<?php echo $CFG->wwwroot.'/course/view.php?id=1&sesskey='.sesskey().'&edit=on';?>"><?php echo get_string('turneditingoff');?></a>
-                		<?php }
-                		?>
-                	</div>
-                </div>
-                <?php } else { ?>
-                	<div class="maincontent"><?php echo $OUTPUT->main_content();?></div>
-                <?php } ?>
+            	
+               
+        	<div class="maincontent"><?php echo $OUTPUT->main_content();?></div>
+                
             <?php
             	require($CFG->dirroot.'/theme/roshnilite/layout/home/categories.php');
-                require($CFG->dirroot.'/theme/roshnilite/layout/home/contacts.php');
-                require($CFG->dirroot.'/theme/roshnilite/layout/home/social_network.php');
+                // require($CFG->dirroot.'/theme/roshnilite/layout/home/contacts.php');
+                // require($CFG->dirroot.'/theme/roshnilite/layout/home/social_network.php');
             ?>
 		</div><!-- END of .content -->
 		<?php
