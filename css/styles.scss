@@ -90,6 +90,33 @@ div#page-navbar{
 }
 
 
+.header3-login input[type="text"], .header3-login input[type="password"]{
+	background-color: white;
+	border: 0px solid transparent;
+	color: hsl(0, 0, 30%);
+	font-family: 'Raleway';
+	&::-webkit-input-placeholder{
+		color: hsl(0,0, 70%);
+	}
+	&::-moz-placeholder{
+		color: hsl(0,0, 70%);
+	}
+	&:-ms-input-placeholder{
+		color: hsl(0,0, 70%);
+	}
+	&::placeholder{
+		color: hsl(0,0, 70%);
+	}
+}
+
+.recuperasenha{
+	a{
+		color: white;
+		text-decoration: underline;
+		font-size: 12px;
+	}
+}
+
 .inner-logo{
 	background-image: $marca;
 	background-repeat: no-repeat;
