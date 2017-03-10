@@ -203,6 +203,23 @@ select.langmenu{
 	line-height: 1;
 }
 
+#nav-message-popover-container, #nav-notification-popover-container{
+	margin-left: 10px;
+	.popover-region-toggle{
+		background-color: white;
+		padding: 5px;
+		border-radius: 50%;
+		height: auto;
+		img{
+			display: block;
+		}
+	}
+}
+
+.popover-region-container{
+	z-index: 50;
+}
+
 footer {
 	background-color: $cor1;
 	width: 100%;

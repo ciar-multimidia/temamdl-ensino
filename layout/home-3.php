@@ -105,7 +105,7 @@ echo $OUTPUT->doctype()
 								<input type="submit" value="LOG IN">
 							</form>
 
-						<div class="recuperasenha"><a href="https://ufgnet.ufg.br/cas/login?execution=e1s1&_eventId=forgotPassword">Recuperar senha de login único</a></div>
+						<div class="recuperasenha"><a href="https://ufgnet.ufg.br">Recuperar senha de login único</a></div>
 
 						<!-- <div class="recuperasenha"><a href="<?php echo $CFG->wwwroot; ?>/login/forgot_password.php">Recuperar senha</a></div> -->
 

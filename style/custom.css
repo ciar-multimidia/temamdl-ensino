@@ -100,9 +100,9 @@ input#id_submitbutton,
 .block .content h3 a, .loginbox a, .h-large span, .av-courses h2, .coursebox>.info>.coursename a, .block .header h2, #region-main h2, .ftoggler {
     color: #0e909f !important;
 }
-/*div#page-navbar {
+div#page-navbar {
     border-bottom: 13px solid #0e909f !important;
-}*/
+}
 #block-region-side-pre {
     border-right: 1px solid #0e909f !important;
 }
